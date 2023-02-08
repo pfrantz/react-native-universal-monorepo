@@ -41,10 +41,10 @@ function setupLocalFilesNormalizerProxy() {
     (request, callback) => {
       const url = request.url.substr(8);
       callback({ path: path.normalize(`${__dirname}/${url}`) });
-    },
-    (error) => {
-      if (error) console.error("Failed to register protocol");
     }
+   /* (error) => {
+      if (error) console.error("Failed to register protocol");
+    }*/
   );
 }
 

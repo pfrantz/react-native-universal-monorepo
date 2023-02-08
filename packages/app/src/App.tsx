@@ -16,9 +16,11 @@ export function App(): JSX.Element {
   const platformValue = subplatform
     ? `${Platform.OS} (${subplatform})`
     : Platform.OS;
+  // @ts-ignore
+  const isHermes = () => !!global.HermesInternal;
   return (
     <SafeAreaView style={styles.root}>
-      {/* On React Native for Web builds coming from CRA, TypeScript 
+      {/* On React Native for Web builds coming from CRA, TypeScript
           complains about the image type, so we cast it as a workaround  */}
       <Image style={styles.logo} source={LogoSrc as ImageSourcePropType} />
       <Text style={styles.text}>Hello from React Native!</Text>
@@ -26,6 +28,12 @@ export function App(): JSX.Element {
         <Text style={styles.text}>Platform: </Text>
         <View style={styles.platformBackground}>
           <Text style={styles.platformValue}>{platformValue}</Text>
+        </View>
+      </View>
+      <View style={styles.platformRow}>
+        <Text style={styles.text}>Hermes Engine: </Text>
+        <View style={styles.platformBackground}>
+          <Text style={styles.platformValue}>{isHermes()? "Yes": "No"}</Text>
         </View>
       </View>
       <AsyncStorageExample/>
