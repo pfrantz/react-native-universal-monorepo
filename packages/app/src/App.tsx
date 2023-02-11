@@ -18,6 +18,8 @@ export function App(): JSX.Element {
     : Platform.OS;
   // @ts-ignore
   const isHermes = () => !!global.HermesInternal;
+  const t: TestType = {t:"hello out there"};
+
   return (
     <SafeAreaView style={styles.root}>
       {/* On React Native for Web builds coming from CRA, TypeScript
@@ -34,6 +36,12 @@ export function App(): JSX.Element {
         <Text style={styles.text}>Hermes Engine: </Text>
         <View style={styles.platformBackground}>
           <Text style={styles.platformValue}>{isHermes()? "Yes": "No"}</Text>
+        </View>
+      </View>
+      <View style={styles.platformRow}>
+        <Text style={styles.text}>Test Type: </Text>
+        <View style={styles.platformBackground}>
+          <Text style={styles.platformValue}>{t.t}</Text>
         </View>
       </View>
       <AsyncStorageExample/>

@@ -12,7 +12,8 @@
     "module": "esnext"
   },
   "include": [
-    "public",
-    "src"
+    "../app/**/*",
+    "./src/**/*",
+    "./public/**/*"
   ]
 }
