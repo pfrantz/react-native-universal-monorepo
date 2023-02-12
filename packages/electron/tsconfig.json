@@ -1,21 +1,19 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES6",
     "jsx": "react-jsx",
     "lib": [
       "dom",
       "dom.Iterable",
       "esnext"
     ],
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-
-    "sourceMap": true
+    "baseUrl": ".",
+    "outDir": "dist",
+    "paths": {
+      "*": ["node_modules/*"]
+    },
+    "module": "commonjs"
   },
-  "include": [
-    "../app/**/*",
-    "./src/**/*",
-    "./public/**/*"
-  ]
+  "include": ["src/**/*"]
 }

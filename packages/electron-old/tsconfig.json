@@ -1,0 +1,21 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "target": "es5",
+    "jsx": "react-jsx",
+    "lib": [
+      "dom",
+      "dom.Iterable",
+      "esnext"
+    ],
+    "noFallthroughCasesInSwitch": true,
+    "module": "commonjs",
+
+    "sourceMap": true
+  },
+  "include": [
+    "../app/**/*",
+    "./src/**/*",
+    "./public/**/*"
+  ]
+}
