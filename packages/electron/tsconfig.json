@@ -13,7 +13,13 @@
     "paths": {
       "*": ["node_modules/*"]
     },
-    "module": "commonjs"
+    "module": "commonjs",
+    "sourceMap": true
   },
-  "include": ["src/**/*"]
+  "include": [
+    "../app/**/*",
+    "./src/**/*",
+    "./public/**/*",
+    "./node_modules"
+  ]
 }
