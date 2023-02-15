@@ -22,7 +22,6 @@
     "@react-native-async-storage/async-storage": "^1.17.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-native": "^0.71.2",
     "react-native-web": "^0.18.12",
     "react-scripts": "^5.0.1",
     "electron-squirrel-startup": "^1.0.0"
@@ -37,7 +36,6 @@
     "@electron-forge/plugin-webpack": "^6.0.5",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.10",
-    "@types/react-native": "^0.71.2",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "@vercel/webpack-asset-relocator-loader": "1.7.3",
