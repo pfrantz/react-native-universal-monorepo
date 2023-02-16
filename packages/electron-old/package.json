@@ -34,7 +34,7 @@
     "@types/react-dom": "^18.0.10",
     "concurrently": "^6.2.1",
     "cross-env": "^7.0.3",
-    "electron": "^23.0.0",
+    "electron": "^22.3.0",
     "electron-builder": "^23.6.0",
     "@craco/craco": "^7.0.0",
     "react-native-monorepo-tools": "^1.2.1",
